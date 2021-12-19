@@ -1,4 +1,4 @@
-function InputField({ label, id, className, error, ...rest }) {
+function InputField({ label, id, className, error, type, ...rest }) {
   const inputClasses = 'form-control ' + (error ? 'is-invalid' : 'is-valid');
 
   return (
@@ -8,7 +8,11 @@ function InputField({ label, id, className, error, ...rest }) {
           {label}
         </label>
       )}
-      <input className={inputClasses} id={id} {...rest} />
+      {type === 'textarea' ? (
+        <textarea className={inputClasses} id={id} {...rest} />
+      ) : (
+        <input className={inputClasses} id={id} type={type} {...rest} />
+      )}
       {error && <div className="text-danger mt-1">{error}</div>}
     </div>
   );
