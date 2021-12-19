@@ -1,11 +1,11 @@
-import InputField from './components/InputField';
-import SelectField from './components/SelectField';
-import InputGroup from './components/InputGroup';
-import SubmitButton from './components/SubmitButton';
+import InputRow from './components/InputRow';
+import SelectRow from './components/SelectRow';
+import InputGroupRow from './components/InputGroupRow';
+import SubmitRow from './components/SubmitRow';
 
 export default {
-  InputField,
-  SelectField,
-  InputGroup,
-  SubmitButton,
+  InputRow,
+  SelectRow,
+  InputGroupRow,
+  SubmitRow,
 };

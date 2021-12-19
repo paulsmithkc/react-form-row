@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function SubmitButton({
+function SubmitRow({
   className,
   type = 'submit',
   disabled = false,
@@ -75,4 +75,4 @@ function SubmitButton({
   );
 }
 
-export default SubmitButton;
+export default SubmitRow;

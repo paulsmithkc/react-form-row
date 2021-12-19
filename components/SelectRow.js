@@ -1,14 +1,14 @@
-function InputField({
+function SelectRow({
   label,
   id,
   className,
-  type,
+  children,
   success,
   error,
   validated = true,
   ...rest
 }) {
-  let inputClasses = 'form-control';
+  let inputClasses = 'form-select';
   if (validated) {
     if (error) {
       inputClasses += ' is-invalid';
@@ -19,20 +19,18 @@ function InputField({
 
   return (
     <div className="form-group mb-3">
-      {label && type !== 'hidden' && (
+      {label && (
         <label className="form-label" htmlFor={id}>
           {label}
         </label>
       )}
-      {type === 'textarea' ? (
-        <textarea className={inputClasses} id={id} {...rest} />
-      ) : (
-        <input className={inputClasses} id={id} type={type} {...rest} />
-      )}
+      <select className={inputClasses} id={id} {...rest}>
+        {children}
+      </select>
       {validated && success && <div className="valid-feedback">{success}</div>}
       {validated && error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 }
 
-export default InputField;
+export default SelectRow;
