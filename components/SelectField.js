@@ -4,11 +4,11 @@ function SelectField({
   className,
   children,
   error,
-  shouldValidate = true,
+  validated = true,
   ...rest
 }) {
   let inputClasses = 'form-select';
-  if (shouldValidate) {
+  if (validated) {
     if (error) {
       inputClasses += ' is-invalid';
     } else {
@@ -26,7 +26,7 @@ function SelectField({
       <select className={inputClasses} id={id} {...rest}>
         {children}
       </select>
-      {shouldValidate && error && <div className="text-danger mt-1">{error}</div>}
+      {validated && error && <div className="text-danger mt-1">{error}</div>}
     </div>
   );
 }

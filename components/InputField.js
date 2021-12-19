@@ -4,11 +4,11 @@ function InputField({
   className,
   type,
   error,
-  shouldValidate = true,
+  validated = true,
   ...rest
 }) {
   let inputClasses = 'form-control';
-  if (shouldValidate) {
+  if (validated) {
     if (error) {
       inputClasses += ' is-invalid';
     } else {
@@ -28,9 +28,7 @@ function InputField({
       ) : (
         <input className={inputClasses} id={id} type={type} {...rest} />
       )}
-      {shouldValidate && error && (
-        <div className="text-danger mt-1">{error}</div>
-      )}
+      {validated && error && <div className="text-danger mt-1">{error}</div>}
     </div>
   );
 }
