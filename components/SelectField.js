@@ -1,5 +1,20 @@
-function SelectField({ label, id, className, error, children, ...rest }) {
-  const inputClasses = 'form-select ' + (error ? 'is-invalid' : 'is-valid');
+function SelectField({
+  label,
+  id,
+  className,
+  children,
+  error,
+  shouldValidate = true,
+  ...rest
+}) {
+  let inputClasses = 'form-select';
+  if (shouldValidate) {
+    if (error) {
+      inputClasses += ' is-invalid';
+    } else {
+      inputClasses += ' is-valid';
+    }
+  }
 
   return (
     <div className="mb-3">
@@ -11,7 +26,7 @@ function SelectField({ label, id, className, error, children, ...rest }) {
       <select className={inputClasses} id={id} {...rest}>
         {children}
       </select>
-      {error && <div className="text-danger mt-1">{error}</div>}
+      {shouldValidate && error && <div className="text-danger mt-1">{error}</div>}
     </div>
   );
 }
