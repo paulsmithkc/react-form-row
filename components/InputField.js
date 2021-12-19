@@ -3,6 +3,7 @@ function InputField({
   id,
   className,
   type,
+  success,
   error,
   validated = true,
   ...rest
@@ -28,7 +29,8 @@ function InputField({
       ) : (
         <input className={inputClasses} id={id} type={type} {...rest} />
       )}
-      {validated && error && <div className="text-danger mt-1">{error}</div>}
+      {validated && success && <div className="valid-feedback">{success}</div>}
+      {validated && error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 }

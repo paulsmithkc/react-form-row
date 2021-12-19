@@ -3,6 +3,7 @@ function SelectField({
   id,
   className,
   children,
+  success,
   error,
   validated = true,
   ...rest
@@ -26,7 +27,8 @@ function SelectField({
       <select className={inputClasses} id={id} {...rest}>
         {children}
       </select>
-      {validated && error && <div className="text-danger mt-1">{error}</div>}
+      {validated && success && <div className="valid-feedback">{success}</div>}
+      {validated && error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 }
