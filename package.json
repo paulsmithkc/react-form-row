@@ -1,5 +1,5 @@
 {
-  "name": "@merlin4/react-input-field",
+  "name": "@merlin4/react-form-row",
   "version": "0.0.1",
   "private": false,
   "description": "Simple react components to reduce code duplication when implementing forms",
@@ -8,11 +8,13 @@
     "react",
     "bootstrap",
     "component",
+    "form",
     "input",
     "select",
     "textarea",
     "field",
-    "group"
+    "group",
+    "row"
   ],
   "author": "Paul Smith",
   "license": "MIT",
@@ -25,6 +27,9 @@
     "url": "https://github.com/paulsmithkc/react-input-field/issues"
   },
   "devDependencies": {
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
     "react": "^17.0.2"
   }
 }
