@@ -52,7 +52,7 @@ function SubmitRow({
   }
 
   return (
-    <div className="form-group mb-3 d-flex flex-row flex-wrap align-items-start justify-content-start">
+    <div className="mb-3 d-flex flex-row flex-wrap align-items-start justify-content-start">
       <button
         className={className}
         type={type}
