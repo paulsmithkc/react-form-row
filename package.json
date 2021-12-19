@@ -2,8 +2,9 @@
   "name": "@merlin4/react-form-row",
   "version": "0.0.1",
   "private": false,
-  "description": "Simple react components to reduce code duplication when implementing forms",
+  "description": "Simple React components to reduce code duplication when implementing forms.",
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "react",
     "bootstrap",

@@ -1,4 +1,4 @@
-function InputGroup({ className, children, success, error, validated = true }) {
+function InputGroupRow({ className, children, success, error, validated = true }) {
   return (
     <div className="mb-3">
       <div className="input-group">{children}</div>
@@ -8,4 +8,4 @@ function InputGroup({ className, children, success, error, validated = true }) {
   );
 }
 
-export default InputGroup;
+export default InputGroupRow;
