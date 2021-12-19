@@ -3,7 +3,7 @@ function InputField({ label, id, className, error, type, ...rest }) {
 
   return (
     <div className="mb-3">
-      {label && (
+      {label && type !== 'hidden' && (
         <label className="form-label" htmlFor={id}>
           {label}
         </label>
