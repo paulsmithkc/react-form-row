@@ -17,7 +17,7 @@ function InputField({
   }
 
   return (
-    <div className="mb-3">
+    <div className="form-group mb-3">
       {label && type !== 'hidden' && (
         <label className="form-label" htmlFor={id}>
           {label}

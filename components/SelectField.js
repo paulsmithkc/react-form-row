@@ -17,7 +17,7 @@ function SelectField({
   }
 
   return (
-    <div className="mb-3">
+    <div className="form-group mb-3">
       {label && (
         <label className="form-label" htmlFor={id}>
           {label}
