@@ -3,9 +3,11 @@ function SelectField({ label, id, className, error, children, ...rest }) {
 
   return (
     <div className="mb-3">
-      <label className="form-label" htmlFor={id}>
-        {label}
-      </label>
+      {label && (
+        <label className="form-label" htmlFor={id}>
+          {label}
+        </label>
+      )}
       <select className={inputClasses} id={id} {...rest}>
         {children}
       </select>

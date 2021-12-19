@@ -3,9 +3,11 @@ function InputField({ label, id, className, error, ...rest }) {
 
   return (
     <div className="mb-3">
-      <label className="form-label" htmlFor={id}>
-        {label}
-      </label>
+      {label && (
+        <label className="form-label" htmlFor={id}>
+          {label}
+        </label>
+      )}
       <input className={inputClasses} id={id} {...rest} />
       {error && <div className="text-danger mt-1">{error}</div>}
     </div>
