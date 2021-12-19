@@ -1,0 +1,30 @@
+{
+  "name": "@merlin4/react-input-field",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Simple react components to reduce code duplication when implementing forms",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "bootstrap",
+    "component",
+    "input",
+    "select",
+    "textarea",
+    "field",
+    "group"
+  ],
+  "author": "Paul Smith",
+  "license": "MIT",
+  "homepage": "https://github.com/paulsmithkc/react-input-field#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulsmithkc/react-input-field.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulsmithkc/react-input-field/issues"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  }
+}
