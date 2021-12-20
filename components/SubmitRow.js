@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function SubmitRow({
-  className,
+  className = 'btn btn-primary',
   type = 'submit',
   disabled = false,
   onClick,
