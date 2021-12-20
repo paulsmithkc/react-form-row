@@ -19,13 +19,13 @@
   ],
   "author": "Paul Smith",
   "license": "MIT",
-  "homepage": "https://github.com/paulsmithkc/react-input-field#readme",
+  "homepage": "https://github.com/paulsmithkc/react-form-row#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulsmithkc/react-input-field.git"
+    "url": "git+https://github.com/paulsmithkc/react-form-row.git"
   },
   "bugs": {
-    "url": "https://github.com/paulsmithkc/react-input-field/issues"
+    "url": "https://github.com/paulsmithkc/react-form-row/issues"
   },
   "devDependencies": {
     "react": "^17.0.2"
