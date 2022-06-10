@@ -3,7 +3,7 @@ import SelectRow from './components/SelectRow';
 import InputGroupRow from './components/InputGroupRow';
 import SubmitRow from './components/SubmitRow';
 
-export default {
+export {
   InputRow,
   SelectRow,
   InputGroupRow,
