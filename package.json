@@ -1,6 +1,6 @@
 {
   "name": "@merlin4/react-form-row",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "Simple React components to reduce code duplication when implementing forms.",
   "main": "index.js",

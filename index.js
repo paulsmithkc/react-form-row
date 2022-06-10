@@ -1,7 +1,7 @@
-import InputRow from './components/InputRow';
-import SelectRow from './components/SelectRow';
-import InputGroupRow from './components/InputGroupRow';
-import SubmitRow from './components/SubmitRow';
+import InputRow from './components/InputRow.js';
+import SelectRow from './components/SelectRow.js';
+import InputGroupRow from './components/InputGroupRow.js';
+import SubmitRow from './components/SubmitRow.js';
 
 export {
   InputRow,
